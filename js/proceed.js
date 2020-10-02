@@ -6,6 +6,7 @@ const userPerAddress = document.getElementById('useraddress');
 const userPerCity = document.getElementById('usercity');
 const userPerState = document.getElementById('userstate');
 const userPerPhone = document.getElementById('userphone');
+const greet = document.querySelector('.usercreateacc');
 
 
 
@@ -39,7 +40,7 @@ checkoutBtn.addEventListener('click' , (e)=>{
     e.preventDefault();
   
     if(checkUserInputs()){
-        swal("Good job!", "Placed Order Successfully !!!!", "success");
+        swal("Your Order Placed Successfully!", "We Will Deliver Your Order On Time", "success");
         emptyUserInputs();
     }
     else{
